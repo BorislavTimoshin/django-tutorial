@@ -1,0 +1,7 @@
+[flake8]
+exclude = __pycache__,djvenv,.mypy_cache
+import-order-style=google
+application-import-names = sitewomen
+max-line-length = 120
+inline-quotes = '
+max-complexity = 8

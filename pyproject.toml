@@ -1,0 +1,28 @@
+[tool.black]
+line-length = 120
+target-version = ['py312']
+exclude = '''
+/(
+  \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+  | venv
+  | djvenv
+)/
+'''
+skip_string_normalization = true
+
+[tool.mypy]
+python_version = 3.12
+exclude = [
+    "__pycache__",
+    "djvenv",
+]
+disallow_untyped_defs = true
+ignore_missing_imports = true
