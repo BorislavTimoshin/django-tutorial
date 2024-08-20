@@ -32,7 +32,7 @@ class Women(models.Model):
         'Husband',
         on_delete=models.SET_NULL,
         null=True,
-        related_name='woman'
+        related_name='woman',
     )
 
     objects = models.Manager()
@@ -76,6 +76,7 @@ class TagPost(models.Model):
 class Husband(models.Model):
     name = models.CharField(max_length=100)
     age = models.IntegerField(null=True)
+    m_count = models.IntegerField(blank=True, default=0)
 
     def __str__(self):
         return self.name

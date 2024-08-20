@@ -23,7 +23,9 @@ class Migration(migrations.Migration):
             model_name='women',
             name='husband',
             field=models.OneToOneField(
-                null=True, on_delete=django.db.models.deletion.SET_NULL, related_name='posts', to='women.husband'
+                null=True, on_delete=django.db.models.deletion.SET_NULL,
+                related_name='posts',
+                to='women.husband',
             ),
         ),
     ]

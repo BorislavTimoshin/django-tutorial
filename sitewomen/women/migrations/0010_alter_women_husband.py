@@ -15,7 +15,10 @@ class Migration(migrations.Migration):
             model_name='women',
             name='husband',
             field=models.OneToOneField(
-                null=True, on_delete=django.db.models.deletion.SET_NULL, related_name='woman', to='women.husband'
+                null=True,
+                on_delete=django.db.models.deletion.SET_NULL,
+                related_name='woman',
+                to='women.husband',
             ),
         ),
     ]

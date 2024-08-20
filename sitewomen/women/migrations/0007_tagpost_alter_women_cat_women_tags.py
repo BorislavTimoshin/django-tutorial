@@ -23,7 +23,9 @@ class Migration(migrations.Migration):
             model_name='women',
             name='cat',
             field=models.ForeignKey(
-                on_delete=django.db.models.deletion.PROTECT, related_name='posts', to='women.category'
+                on_delete=django.db.models.deletion.PROTECT,
+                related_name='posts',
+                to='women.category',
             ),
         ),
         migrations.AddField(

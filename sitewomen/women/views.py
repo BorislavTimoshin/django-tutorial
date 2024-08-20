@@ -1,7 +1,7 @@
 from django.http import HttpRequest, HttpResponse, HttpResponseNotFound
 from django.shortcuts import get_object_or_404, render
 
-from .models import Women, Category, TagPost
+from .models import Category, TagPost, Women
 
 menu = [
     {
