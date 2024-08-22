@@ -15,3 +15,5 @@ flake8-return
 pep8-naming
 flake8-variables-names
 sort-requirements
+django-extensions
+ipython
