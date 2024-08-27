@@ -78,7 +78,7 @@ def login(request: HttpRequest) -> HttpResponse:
     return HttpResponse('Авторизация')
 
 
-def show_tag_postlist(request, tag_slug):
+def show_tag_postlist(request: HttpRequest, tag_slug):
     tag = get_object_or_404(TagPost, slug=tag_slug)
     posts = tag.posts.filter(is_published=Women.Status.PUBLISHED).select_related('cat')
 
